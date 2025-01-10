@@ -6,12 +6,12 @@ ARCH=$(uname -m)
 URL=""
 
 if [ "$OS" = "Linux" ]; then
-    URL="https://github.com/divyakgaur17/nlt/releases/download/v1.0.0/nlt-linux"
+    URL="https://github.com/divyakgaur17/nlt/releases/download/v1.0/nlt-linux"
 elif [ "$OS" = "Darwin" ]; then
     if [ "$ARCH" = "arm64" ]; then
-        URL="https://github.com/divyakgaur17/nlt/releases/download/v1.0.0/nlt-macos-arm64"
+        URL="https://github.com/divyakgaur17/nlt/releases/download/v1.0/nlt-macos-arm64"
     else
-        URL="https://github.com/divyakgaur17/nlt/releases/download/v1.0.0/nlt-macos"
+        URL="https://github.com/divyakgaur17/nlt/releases/download/v1.0/nlt-macos"
     fi
 elif [ "$OS" = "Windows_NT" ]; then
     echo "Please download the binary manually for Windows."
